@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-logo" href="index.html">
+          <img src="img/index-main-logo.svg" widht="120px" height="60px" alt="Логотип веб-студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#" class="site-navigation-current">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a href="#" class="basket">Корзина</a>
+      </nav>
+      <h1 class="page-title">Магазин готовых товаров</h1>
+    </header>
+
+    <main class="main-page">
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <input  type="range" min="0" max="12000" step="1" value="5000,15000">
+            <label>От</label><input type="number" value="min"></label>
+            <label>До<input type="number" value="max"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-net">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Net" value="Adaptive" checked>
+                Адаптивная</li>
+              <li class="filter-net">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Net" value="Fixed">
+                Фиксированная</li>
+              <li class="filter-net">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Net" value="Rubber">
+                Резиновая</li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li class="filter-features">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Slider" checked>
+                Слайдер</li>
+              <li class="filter-features">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Advantages block">
+                Блок преимуществ</li>
+              <li class="filter-features">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="News" checked>
+                Новости</li>
+              <li class="filter-features">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Galery">
+                Галерея</li>
+              <li class="filter-features">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Basket">
+                Корзина</li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+        </form>
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Список шаблонов</h2>
+        <div class="sort">
+          <p>СОРТИРОВАТЬ:</p>
+          <ul>
+            <li>ПО ЦЕНЕ</li>
+            <li>ПО ТИПУ</li>
+            <li>ПО НАЗВАНИЮ</li>
+        </div>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img src="img/catalog-sedona.png" width="360" height="600" alt="Sedona">
+            <div class="catalog-hover">
+              <p><b>SEDONA</b></p>
+              <p>Информационный сайт для туристов</p>
+              <p><a class="button" href="#">9 900 РУБ.</a></p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/catalog-pinkapp.png" width="360" height="600" alt="Pink App">
+            <div class="catalog-hover">
+              <p><b>PINK APP</b></p>
+              <p>Продуктовй лендинг приложения для iOS и Android</p>
+              <p><a class="button" href="#">9 900 РУБ.</a></p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/catalog-barbershop.png" width="360" height="600" alt="Barbershop">
+            <div class="catalog-hover">
+              <p><b>BARBERSHOP</b></p>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <p><a class="button" href="#">9 900 РУБ.</a></p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/catalog-mishka.png" width="360" height="600" alt="Mishka">
+            <div class="catalog-hover">
+              <p><b>MISHKA</b></p>
+              <p>Интернет-магазин вязаных игрушек.</p>
+              <p><a class="button" href="#">9 900 РУБ.</a></p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/catalog-aplus.png" width="360" height="600" alt="A Plus">
+            <div class="catalog-hover">
+              <p><b>A PLUS</b></p>
+              <p>Лендинг курсов повышения квалификации</p>
+              <p><a class="button" href="#">9 900 РУБ.</a></p>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <img src="img/catalog-kvast.png" width="360" height="600" alt="Kvast">
+            <div class="catalog-hover">
+              <p><b>КВАСТ</b></p>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <p><a class="button" href="#">9 900 РУБ.</a></p>
+            </div>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <section class="contacts-map">
+        <img src="img/contacts-map.png" widht="1430px" height="400px">
+        <div class="contacts-info">
+          <h4>NERDS DESIGN STUDIO</h4>
+          <p>191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д.19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <button class="button" type="submit">напишите нам</button>
+        </div>
+      </section>
+      <ul class="footer-social">
+        <li><a href="#" class="social-button">Вконтакте</a></li>
+        <li><a href="#" class="social-button">Фейсбук</a></li>
+        <li><a href="#" class="social-button">Инстаграм</a></li>
+      </ul>
+      <p><b>Давайте дружить, это выгодно!</b></p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+    <section class="write-us">
+      <h2>напишите нам</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label> Ваше имя:
+            <input class="form-user-name" type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+          </label>
+        </p>
+        <p>
+          <label> Ваш e-mail:
+            <input class="form-mail" type="text" name="e-mail" placeholder="Для отправки ответа">
+          </label>
+        </p>
+        <p>
+          <label>Текст письма:
+            <textarea class="form-message" name="message" placeholder="В свободной форме">
+              В свободной форме
+            </textarea>
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+          <span class="write-us-close">x</span>
+        </section>
+    </body>
+</html>
