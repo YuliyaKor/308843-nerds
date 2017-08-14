@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-logo" href="index.html">
-          <img src="img/index-main-logo.svg" widht="120px" height="60px" alt="Логотип веб-студии Нёрдс">
+          <img src="img/index-main-logo.svg" width="120" height="60" alt="Логотип веб-студии Нёрдс">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
@@ -27,9 +27,9 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
-            <input  type="range" min="0" max="12000" step="1" value="5000,15000">
-            <label>От</label><input type="number" value="min"></label>
-            <label>До<input type="number" value="max"></label>
+            <input  type="range" min="0" max="12000" step="1" value="5000">
+            <label>От<input type="number" name="От" value="5000"></label>
+            <label>До<input type="number" name="До" value="10000"></label>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
@@ -72,11 +72,14 @@
       <section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
         <div class="sort">
-          <p>СОРТИРОВАТЬ:</p>
-          <ul>
-            <li>ПО ЦЕНЕ</li>
-            <li>ПО ТИПУ</li>
-            <li>ПО НАЗВАНИЮ</li>
+          <div class="sort-title">СОРТИРОВАТЬ:</div>
+          <ul class="sort-items">
+            <li><a href="#" class="sort-item">ПО ЦЕНЕ</a></li>
+            <li><a href="#" class="sort-item">ПО ТИПУ</a></li>
+            <li><a href="#" class="sort-item">ПО НАЗВАНИЮ</a></li>
+            <li><a href="#" class="sort-item sort-up">По возрастанию</a></li>
+            <li><a href="#" class="sort-item sort-down">По убыванию</a></li>
+          </ul>
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -139,7 +142,7 @@
 
     <footer class="main-footer">
       <section class="contacts-map">
-        <img src="img/contacts-map.png" widht="1430px" height="400px">
+        <img src="img/contacts-map.png" width="1430" height="400" alt="Карта">
         <div class="contacts-info">
           <h4>NERDS DESIGN STUDIO</h4>
           <p>191186, Санкт-Петербург,<br>
