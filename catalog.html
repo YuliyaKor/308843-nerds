@@ -14,7 +14,7 @@
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#" class="site-navigation-current">Магазин</a></li>
+          <li><a href="catalog.html" class="site-navigation-current">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <a href="#" class="basket">Корзина</a>
@@ -28,42 +28,48 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость:</legend>
-            <input  type="range" min="0" max="12000" step="1" value="5000">
-            <label>От<input type="number" name="От" value="5000"></label>
-            <label>До<input type="number" name="До" value="10000"></label>
+            <label for="rangecost" class="visually-hidden">Фильтр по стоимости</label>
+            <input  type="range" name="rangecost" min="0" max="20000" step="1" value="15000">
+            <label>От<input type="number" name="От" value="0"></label>
+            <label>До<input type="number" name="До" value="15000"></label>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-net">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Net" value="Adaptive" checked>
-                Адаптивная</li>
+                <label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="Сетка" value="Адаптивная" checked>
+                Адаптивная</label></li>
               <li class="filter-net">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Net" value="Fixed">
-                Фиксированная</li>
+                <label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="Сетка" value="Фиксированная">
+                Фиксированная</label></li>
               <li class="filter-net">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Net" value="Rubber">
-                Резиновая</li>
+                <label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="Сетка" value="Резиновая">
+                Резиновая</label></li>
             </ul>
           </fieldset>
           <fieldset>
             <legend>Особенности:</legend>
             <ul>
               <li class="filter-features">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Slider" checked>
-                Слайдер</li>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" checked>
+                <label for="Слайдер">Слайдер</label>
+              </li>
               <li class="filter-features">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Advantages block">
-                Блок преимуществ</li>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Блок преимуществ">
+                <label for="Блок преимуществ">Блок преимуществ</label>
+              </li>
               <li class="filter-features">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="News" checked>
-                Новости</li>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Новости" checked>
+                <label for="Новости">Новости</label>
+              </li>
               <li class="filter-features">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Galery">
-                Галерея</li>
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Галерея">
+                <label for="Галерея">Галерея</label>
+              </li>
               <li class="filter-features">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Basket">
-                Корзина</li>
+                <label for="Basket">Корзина</label>
+              </li>
             </ul>
           </fieldset>
           <button type="submit" class="filter-button button">Показать</button>
@@ -183,7 +189,7 @@
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-          <span class="write-us-close">x</span>
+          <button class="write-us-close"><img src="img/close-cross.svg" width="21" height="21" alt="Закрыть"></button>
         </section>
     </body>
 </html>
